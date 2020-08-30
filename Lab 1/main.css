@@ -26,3 +26,6 @@
 	height: max-content;
 	background-color: lightgray;
 }
+.text-center {
+	text-align: center;
+}
