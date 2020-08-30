@@ -1,0 +1,12 @@
+.center {
+	margin: auto;
+	width: 100%;
+	border: 3px solid red;
+	background-color: #dd546e;
+	padding: 10px;
+	text-align: center;
+}
+#bike-img {
+    /* background: url(bike.jpeg);*/
+	background-size: 200px 200px;
+}
