@@ -6,7 +6,23 @@
 	padding: 10px;
 	text-align: center;
 }
-#bike-img {
-    /* background: url(bike.jpeg);*/
-	background-size: 200px 200px;
+
+#img-align {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.contact {
+	width: 200px;
+	height: auto;
+	background-color: grey;
+	float: right;
+}
+
+.body-align {
+	margin: auto;
+	width: 700px;
+	height: max-content;
+	background-color: lightgray;
 }
