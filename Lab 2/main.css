@@ -1,0 +1,162 @@
+/* Lab 1 */
+.center {
+	margin: auto;
+	width: 100%;
+	border: 3px solid red;
+	background-color: #dd546e;
+	padding: 10px;
+	text-align: center;
+}
+
+.img-align {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.contact {
+	width: 200px;
+	height: auto;
+	background-color: grey;
+	float: right;
+}
+
+.body-align {
+	margin: auto;
+	width: 725px;
+	height: max-content;
+}
+
+.body-color {
+	background-color: lightgray;
+}
+
+.text-center {
+	text-align: center;
+}
+
+/* Lab 2 Part 1 */
+
+body {
+	margin: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	padding: 10px;
+}
+
+p {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+li {
+	padding-left: 10px;
+}
+
+.img-border {
+	border: 5px solid blue;
+	border-radius: 16px;
+}
+
+.img-pos {
+	position: absolute;
+	top: 150px;
+	right: 40px;
+	width: 200px;
+	height: 100px;
+}
+
+/* Lab 2 Part 2 */
+
+.col {
+	float: left;
+}
+
+.col-right {
+	width: 50%;
+	height: max-content;
+}
+
+.col-left {
+	width: 50%;
+	height: max-content;
+}
+
+.img-size {
+	width: 100%;
+	height: auto;
+}
+
+.div-showcase {
+	background-color: beige;
+	border: 3px solid black;
+	width: 90%;
+	height: 400px;
+	display: table;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	border-collapse: collapse;
+}
+
+.bike-title {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	margin: 0 0 0 0;
+	text-align: center;
+	padding: 0 0 0 0;
+}
+
+.text-wrap {
+	word-wrap: break-word;
+}
+
+.saturate {
+	filter: saturate(3);
+}
+
+.contrast {
+	filter: contrast(160%);
+}
+
+.huerotate {
+	filter: hue-rotate(180deg);
+}
+
+.price-float {
+	border-top: 1px solid black;
+	vertical-align: bottom;
+	text-align: right;
+	display: table-row;
+	height: 1px;
+	padding: 0 0 0 0;
+	margin: 0 10px 0 0;
+}
+
+.col-div-width {
+	max-width: 725px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.disclaimer-div-size {
+	background-color: darkgray;
+	float: left;
+	width: 437px;
+	height: 100px;
+}
+
+.disclaimer-text {
+	text-align: center;
+	padding: 0 0 0 0;
+}
+
+body {
+	max-height: max-content;
+}
