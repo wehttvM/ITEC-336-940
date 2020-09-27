@@ -1,0 +1,254 @@
+/**----------NORM START---------**/
+* {
+	font-family: "Lucida Console", Courier, monospace;
+	z-index: -1;
+}
+/**----------NORM END---------**/
+/**----------NAV START---------**/
+
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+#main-nav {
+	background-color: #ae1a4f;
+	height: max-content;
+	margin: 0px;
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	padding: 0;
+	z-index: 1;
+}
+
+#main-nav li {
+	display: inline-block;
+}
+
+.site-name {
+	padding-right: 25px;
+	font-weight: bold;
+	font-size: large;
+	color: #ffffff;
+}
+
+.site-name:before {
+	content: "Scheltens' Bicycles";
+}
+
+.nav-item {
+	color: #fff;
+	background-image: radial-gradient(circle, #be4772, #ae1a4f);
+	text-decoration: none;
+	padding: 5px 15px;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.nav-item:hover {
+	background-color: #be4772;
+	background-image: radial-gradient(circle, #be4772, #ae1a4f);
+	border-radius: 15px;
+	color: #000000;
+	font-size: 30px;
+}
+
+/**----------NAV END---------**/
+/**----------HOME START---------**/
+.center {
+	margin: auto;
+	width: 100%;
+	border: 3px solid red;
+	background-color: #dd546e;
+	padding: 10px;
+	text-align: center;
+}
+
+#img-align {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.contact {
+	width: 200px;
+	height: auto;
+	background-color: grey;
+	float: right;
+}
+
+.div-wrapper {
+	margin: auto auto auto auto;
+	padding-top: 50px; /** makes nav and content look good**/
+	width: 725px;
+	height: max-content;
+}
+
+.text-center {
+	text-align: center;
+}
+
+/**----------HOME END---------**/
+/**----------RENTALS START---------**/
+/* Lab 2 Part 2 */
+
+.col {
+	float: left;
+}
+
+.col-right {
+	width: 50%;
+	height: max-content;
+}
+
+.col-left {
+	width: 50%;
+	height: max-content;
+}
+
+.img-size {
+	width: 100%;
+	height: auto;
+}
+
+.div-showcase {
+	background-color: beige;
+	border: 3px solid black;
+	width: 90%;
+	height: 400px;
+	display: table;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	border-collapse: collapse;
+}
+
+.bike-title {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	margin: 0 0 0 0;
+	text-align: center;
+	padding: 0 0 0 0;
+}
+
+.text-wrap {
+	word-wrap: break-word;
+}
+
+.saturate {
+	filter: saturate(3);
+}
+
+.contrast {
+	filter: contrast(160%);
+}
+
+.huerotate {
+	filter: hue-rotate(180deg);
+}
+
+.price-float {
+	border-top: 1px solid black;
+	vertical-align: bottom;
+	text-align: right;
+	display: table-row;
+	height: 1px;
+	padding: 0 0 0 0;
+	margin: 0 10px 0 0;
+}
+
+.col-div-width {
+	max-width: 725px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.disclaimer-div-size {
+	background-color: darkgray;
+	float: left;
+	width: 437px;
+	height: max-content;
+	margin-top: 9px; /** aligns disclaimer with the colums **/
+}
+
+.disclaimer-text {
+	text-align: center;
+	padding: 0 0 0 0;
+}
+
+body {
+	max-height: max-content;
+}
+
+/**----------RENTALS END---------**/
+/**----------NAV pt.2 start---------**/
+
+.responsive-site-name {
+	width: 0px;
+	height: 0px;
+	display: block;
+	font-weight: bold;
+	font-size: large;
+	color: #ffffff;
+	margin: 0px;
+}
+
+.responsive-site-name:before {
+	content: "";
+}
+
+@media screen and (max-width: 800px) {
+	.site-name {
+		display: none;
+		width: 0px;
+		height: 0px;
+	}
+
+	.site-name:before {
+		content: "";
+	}
+
+	.responsive-site-name {
+		width: 100%;
+		height: 25px;
+		display: block;
+		text-align: center;
+		font-weight: bold;
+		font-size: large;
+		color: #ffffff;
+		background-color: #ae1a4f;
+		margin: 0px 0px 0px 0px;
+	}
+
+	.responsive-site-name:before {
+		content: "Scheltens' Bicycles"; /** 581px is the minimum width that can happen**/
+	}
+
+	.div-wrapper {
+		padding-top: 75px;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	.responsive-site-name:before {
+		content: "Scheltens' Bicycles"; /** 581px is the minimum width that can happen**/
+	}
+
+	#main-nav li {
+		display: block;
+	}
+	.nav-item {
+		width: max-content;
+		display: block;
+		margin: 0px auto 0 auto;
+		padding: 0px;
+	}
+
+	.div-wrapper {
+		padding-top: 150px;
+	}
+}
+
+/**----------NAV pt.2 END---------**/
