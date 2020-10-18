@@ -1,0 +1,215 @@
+<!--
+*****************************************************************************
+Title: Scheltens' Bicycles
+Use: To learn HTML's basics
+Author: Matthew Scheltens
+School/Term: Southern Illinois University, Fall 2020
+Developed: Oct 18, 2020
+Tested: Oct 18, 2020; Passed on Firefox, Chrome, and Safari browsers.
+******************************************************************************
+-->
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta name="robots" content="none" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Matthew Scheltens" />
+		<title>Scheltens' Bicylces</title>
+		<link rel="stylesheet" type="text/css" href="main.css" />
+		<style>
+			@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+		</style>
+	</head>
+	<body>
+		<!-- NAV START -->
+		<nav class="nav_desktop">
+			<h1 class="responsive-site-name">&#8203;</h1>
+			<ul>
+				<li class="site-name"></li>
+				<li><a href="home.htm" class="nav-item">Home</a></li>
+				<li><a href="rentals.htm" class="nav-item">Rentals</a></li>
+				<li><a href="sales.htm" class="nav-item">Sales</a></li>
+				<li><a href="services.htm" class="nav-item">Services</a></li>
+				<li><a href="contact.htm" class="nav-item">Contact</a></li>
+			</ul>
+		</nav>
+		<nav id="main-nav">
+			<h1 class="responsive-site-name">&#8203;</h1>
+			<ul>
+				<li class="site-name"></li>
+				<li><a href="home.htm" class="nav-item">Home</a></li>
+				<li><a href="rentals.htm" class="nav-item">Rentals</a></li>
+				<li><a href="sales.htm" class="nav-item">Sales</a></li>
+				<li><a href="services.htm" class="nav-item">Services</a></li>
+				<li><a href="contact.htm" class="nav-item">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="div-wrapper">
+			<table>
+				<tr>
+					<th class="align-left">Service</th>
+					<th class="th-cost align-left">Cost (starting)</th>
+					<th class="th-turnaround align-left">Turnaround Time</th>
+				</tr>
+				<tr>
+					<td colspan="3" class="td-category-text td-category align-center">
+						Saftey and Adjustments
+					</td>
+				</tr>
+				<!-- SAFETY CHECK START -->
+				<tr class="tr-service">
+					<td class="td-service">Safety Checks</td>
+					<td class="align-right">$20</td>
+					<td class="align-right">15 min</td>
+				</tr>
+				<tr>
+					<td colspan="3" class="td-span td-span-text">
+						Saftey checks include brake checking on the road, reflector checks
+						and tire checks.
+					</td>
+				</tr>
+				<!-- SAFETY CHECK END -->
+				<!-- BRAKE ADJUSTMENT START -->
+				<tr class="tr-service">
+					<td class="td-service">Brake Adjustments</td>
+					<td class="align-right">$20</td>
+					<td class="align-right">30 min</td>
+				</tr>
+				<tr>
+					<td colspan="3" class="td-span td-span-text">
+						Brake adjustments are done to enhance the brakes. After this is
+						done, we do a courtesy brake check on the road outside the store.
+					</td>
+				</tr>
+				<!-- BRAKE ADJUSTMENT END -->
+				<!-- SEAT AND HANDLEBAR ADJUSTMENT START -->
+				<tr class="tr-service">
+					<td class="td-service">Seat and Handlebar Adjustments</td>
+					<td class="align-right">$20</td>
+					<td class="align-right">5 min</td>
+				</tr>
+				<tr>
+					<td colspan="3" class="td-span td-span-text">
+						This service is uniquely interactive. We adjust the bike to the
+						riders dimensions. To check if the adjustment is correct, the rider
+						must complete a lap around the store for confirmation that the bike
+						is adjusted correctly.
+					</td>
+				</tr>
+				<!-- SEAT AND HANDLEBAR ADJUSTMENT END -->
+				<!-- CALIBRATE GEARS START -->
+				<tr class="tr-service">
+					<td class="td-service">Calibrate Gears</td>
+					<td class="align-right">$10</td>
+					<td class="align-right">10 min</td>
+				</tr>
+				<tr>
+					<td colspan="3" class="td-span td-span-text">
+						Calibrating gears can be a long process, but we make it easy, tops
+						10 min, then you are set to go.
+					</td>
+				</tr>
+				<!-- CALIBRATE GEARS END -->
+				<!-- ADJUST WHEEL HUBS START -->
+				<tr class="tr-service">
+					<td class="td-service">Adjust Wheel Hubs</td>
+					<td class="align-right">$10</td>
+					<td class="align-right">15 min</td>
+				</tr>
+				<tr>
+					<td colspan="3" class="td-span td-span-text">
+						If your wheel hubs are looking wonky, we make them look clean and
+						aligned.
+					</td>
+				</tr>
+				<!-- ADJUST WHEEL HUBS END -->
+				<tr>
+					<td colspan="3" class="td-category-text td-category align-center">
+						Repairs and Maintainance
+					</td>
+				</tr>
+				<!-- CLEAN UP AND LUBE START -->
+				<tr class="tr-service">
+					<td class="td-service">Clean up and Lube</td>
+					<td class="align-right">$20</td>
+					<td class="align-right">10 min</td>
+				</tr>
+				<tr>
+					<td colspan="3" class="td-span td-span-text">
+						For this service, we power wash your bike with the hose and then
+						lather everything from the gears to the joints with lubricant.
+					</td>
+				</tr>
+				<!-- CLEAN UP AND LUBE END -->
+				<!-- TIRE REPAIR START -->
+				<tr class="tr-service">
+					<td class="td-service">Tire Repair</td>
+					<td class="align-right">$60</td>
+					<td class="align-right">35 min</td>
+				</tr>
+				<tr>
+					<td colspan="3" class="td-span td-span-text">
+						While patching a bike tire is temporary, we, here, replace both
+						tires with new ones of your choice. Prices for pairs of tires start
+						at 60 USD.
+					</td>
+				</tr>
+				<!-- TIRE REPAIR END -->
+				<!-- CABLE REPLACEMENT START -->
+				<tr class="tr-service">
+					<td class="td-service">Cable Replacement</td>
+					<td class="align-right">$40</td>
+					<td class="align-right">40 min</td>
+				</tr>
+				<tr>
+					<td colspan="3" class="td-span td-span-text">
+						Cables can be trickier than most things on bikes. Normally, this
+						service process takes longer as it is error prone.
+					</td>
+				</tr>
+				<!-- CABLE REPLACEMENT END -->
+				<!-- PARTS REPLACEMENT START -->
+				<tr class="tr-service">
+					<td class="td-service">Parts Replacement</td>
+					<td class="align-right">$15</td>
+					<td class="align-right">45 min</td>
+				</tr>
+				<tr>
+					<td colspan="3" class="td-span td-span-text">
+						Our part replacement service can depend on what needs to be replaced
+						and, if we have the replacement in-store.
+					</td>
+				</tr>
+				<!-- PARTS REPLACEMENT END -->
+				<!-- REPAIR BIKE CHAIN START -->
+				<tr class="tr-service">
+					<td class="td-service">Repair Bike Chain</td>
+					<td class="align-right">$25</td>
+					<td class="align-right">5 min</td>
+				</tr>
+				<tr>
+					<td colspan="3" class="td-span td-span-text">
+						Bike chains are a hassle to repair. Our shop has master craft
+						employees that do this at record speeds.
+					</td>
+				</tr>
+				<!-- REPAIR BIKE CHAIN END -->
+				<!-- OTHER MISCELLANEOUS REPAIRS START -->
+				<tr class="tr-service">
+					<td class="td-service">Other Miscellaneous Repairs</td>
+					<td class="align-right">Negotiable</td>
+					<td class="align-right">TBD</td>
+				</tr>
+				<tr>
+					<td colspan="3" class="td-span td-span-text">
+						If you need any auxilary work done on your ride, we can accomodate
+						your request if possible. Prices and time of completion will be
+						negotiated upon request.
+					</td>
+				</tr>
+				<!-- OTHER MISCELLANEOUS REPAIRS END -->
+			</table>
+		</div>
+	</body>
+</html>

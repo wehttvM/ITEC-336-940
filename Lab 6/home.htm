@@ -1,0 +1,120 @@
+<!--
+*****************************************************************************
+Title: Scheltens' Bicycles
+Use: To learn HTML's basics
+Author: Matthew Scheltens
+School/Term: Southern Illinois University, Fall 2020
+Developed: Oct 18, 2020
+Tested: Oct 18, 2020; Passed on Firefox, Chrome, and Safari browsers.
+******************************************************************************
+-->
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta name="robots" content="none" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Matthew Scheltens" />
+		<title>Scheltens' Bicylces</title>
+		<link rel="stylesheet" type="text/css" href="main.css" />
+		<style>
+			@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+		</style>
+		<link
+			rel="shortcut icon"
+			type="image/png"
+			sizes="32x32"
+			href="icons/favicon-32x32.png"
+		/>
+		<link
+			rel="shortcut icon"
+			type="image/png"
+			sizes="16x16"
+			href="icons/favicon-16x16.png"
+		/>
+		<link rel="shortcut icon" href="icons/favicon.ico" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script src="dist/jquery.slicknav.js"></script>
+		<script src="jquery.slicknav.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$(".nav_desktop").slicknav();
+			});
+		</script>
+	</head>
+	<body>
+		<!-- NAV START -->
+		<nav class="nav_desktop">
+			<h1 class="responsive-site-name">&#8203;</h1>
+			<ul>
+				<li class="site-name"></li>
+				<li><a href="home.htm" class="nav-item">Home</a></li>
+				<li><a href="rentals.htm" class="nav-item">Rentals</a></li>
+				<li><a href="sales.htm" class="nav-item">Sales</a></li>
+				<li><a href="services.htm" class="nav-item">Services</a></li>
+				<li><a href="contact.htm" class="nav-item">Contact</a></li>
+			</ul>
+		</nav>
+			<nav id="main-nav">
+			<h1 class="responsive-site-name">&#8203;</h1>
+			<ul>
+				<li class="site-name"></li>
+				<li><a href="home.htm" class="nav-item">Home</a></li>
+				<li><a href="rentals.htm" class="nav-item">Rentals</a></li>
+				<li><a href="sales.htm" class="nav-item">Sales</a></li>
+				<li><a href="services.htm" class="nav-item">Services</a></li>
+				<li><a href="contact.htm" class="nav-item">Contact</a></li>
+			</ul>
+		</nav>
+		<!-- NAV END -->
+		<!-- HOME START -->
+		<div class="div-wrapper">
+			<audio controls autoplay loop>
+				<source src="bike.mp3" />
+			</audio>
+
+			<p class="text-center">
+				Welcome to the world renown and most lorum-ipsumous Bicylces shops! We
+				specialize in our devote work to our great customers!
+			</p>
+			<figure class="figure-align">
+				<div class="index-img"></div>
+				<figcaption>Maximus Ipsum</figcaption>
+			</figure>
+			<h2>Our bikes</h2>
+			<ol>
+				<li>Maximus Ipsum - $199</li>
+				<li>Itchet sit Ipsum - $345</li>
+				<li>Sapien no-sit Ipsum - $570</li>
+				<li>Cog Ipsum - $430</li>
+				<li>Magma sit Ipsum - $660</li>
+			</ol>
+			<p>
+				We have been comended by this great school
+				<a href="https://siu.edu/">SIU</a>!
+			</p>
+			<div class="contact">
+				<h3>contact information</h3>
+				<address>
+					Written by
+					<a href="mailto:lorum.ipsum@siu.edu">Lorem himself</a>.<br />
+					Scheltens' Bicylces&#8482;<br />
+					<a href="tel:+8000000000">(800) 000-0000</a><br />
+					4040 East Ipsum Drive<br />
+					Carbondale<br />
+					IL 62901<br />
+					USA
+				</address>
+			</div>
+		</div>
+		<!-- HOME END -->
+	</body>
+</html>
+<!-- Done?
+1. Home Page 			yes
+2. Bike Rental Page		yes
+3. Blank Sales Page		no
+4. Blank Services Page	no
+5. Blank Contact Page	no
+6. CSS Page				yes
+-->
