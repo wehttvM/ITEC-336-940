@@ -36,7 +36,7 @@ Tested: Oct 18, 2020; Passed on Firefox, Chrome, and Safari browsers.
 		</nav>
 		<nav id="main-nav">
 			<h1 class="responsive-site-name">&#8203;</h1>
-			<ul>
+			<ul class="parent">
 				<li class="site-name"></li>
 				<li><a href="home.htm" class="nav-item">Home</a></li>
 				<li><a href="rentals.htm" class="nav-item">Rentals</a></li>
@@ -45,73 +45,87 @@ Tested: Oct 18, 2020; Passed on Firefox, Chrome, and Safari browsers.
 				<li><a href="contact.htm" class="nav-item">Contact</a></li>
 			</ul>
 		</nav>
+		<!-- NAV END -->
 		<div class="div-wrapper">
-			<video controls autoplay loop>
+			<video class="sales-video" controls autoplay loop>
 				<source src="biker.mp4" />
 			</video>
-			<div class="sales-showcase">
-				<div class="showcase-left">
-					<img src="bike.jpeg" alt="picture of bike" class="sales-img" />
-				</div>
-				<h3 class="sales-margin-fix">Maximus Ipsum</h3>
-				<ul class="sales-margin-fix">
-					<li>Fast as Flip technology (FaF)</li>
-					<li>Be careful you might go so fast and actually flip</li>
-					<li>Max speed of 10 MPH</li>
-				</ul>
-				<p class="sales-margin-fix">purchase Price: $675</p>
-			</div>
-
-			<div class="sales-showcase">
-				<div class="showcase-left">
-					<img
-						src="bike.jpeg"
-						alt="picture of bike"
-						class="sales-img saturate"
-					/>
-				</div>
-				<h3 class="sales-margin-fix">Magma sit Ipsum</h3>
-				<ul class="sales-margin-fix">
-					<li>so Hot its Cold technology(sHiC)</li>
-					<li>This technology should numb your posterior</li>
-					<li>Max speed of 7.5 MPH</li>
-				</ul>
-				<p class="sales-margin-fix">purchase Price: $480</p>
-			</div>
-
-			<div class="sales-showcase">
-				<div class="showcase-left">
-					<img
-						src="bike.jpeg"
-						alt="picture of bike"
-						class="sales-img contrast"
-					/>
-				</div>
-				<h3 class="sales-margin-fix">Cog Ipsum</h3>
-				<ul class="sales-margin-fix">
-					<li>Shiny Cog technology (SC)</li>
-					<li>have you ever looked at a shiny rocks? it's shinier</li>
-					<li>Max speed of 5 MPH</li>
-				</ul>
-				<p class="sales-margin-fix">purchase Price: $545</p>
-			</div>
-
-			<div class="sales-showcase">
-				<div class="showcase-left">
-					<img
-						src="bike.jpeg"
-						alt="picture of bike"
-						class="sales-img huerotate"
-					/>
-				</div>
-				<h3 class="sales-margin-fix">Itchet sit Ipsum</h3>
-				<ul class="sales-margin-fix">
-					<li>Advanced Sitting Aperatus technology (ASA)</li>
-					<li>ASA will ensure you keep pedalling and not sitting!</li>
-					<li>Max speed of 9 MPH</li>
-				</ul>
-				<p class="sales-margin-fix">purchase Price: $520</p>
-			</div>
+			<table class="sales-showcase">
+				<tr>
+					<th class="showcase-left">
+						<img src="bike_x300.png" alt="picture of bike" class="sales-img" />
+					</th>
+					<th class="showcase-right">
+						<h3 class="sales-title sales-margin-fix">Maximus Ipsum</h3>
+						<ul class="sales-text sales-margin-fix-ul">
+							<li>Fast as Flip technology (FaF)</li>
+							<li>Be careful you might go so fast and actually flip</li>
+							<li>Max speed of 10 MPH</li>
+						</ul>
+						<p class="sales-text sales-margin-fix">Purchase Price: $675</p>
+					</th>
+				</tr>
+			</table>
+			<table class="sales-showcase">
+				<tr>
+					<th class="showcase-left">
+						<img
+							src="bike_x300.png"
+							alt="picture of bike"
+							class="sales-img saturate"
+						/>
+					</th>
+					<th class="showcase-right">
+						<h3 class="sales-title sales-margin-fix">Magma sit Ipsum</h3>
+						<ul class="sales-text sales-margin-fix-ul">
+							<li>So Hot its Cold technology (sHiC)</li>
+							<li>This technology should numb your posterior</li>
+							<li>Max speed of 7.5 MPH</li>
+						</ul>
+						<p class="sales-text sales-margin-fix">Purchase Price: $480</p>
+					</th>
+				</tr>
+			</table>
+			<table class="sales-showcase">
+				<tr>
+					<th class="showcase-left">
+						<img
+							src="bike_x300.png"
+							alt="picture of bike"
+							class="sales-img contrast"
+						/>
+					</th>
+					<th class="showcase-right">
+						<h3 class="sales-title sales-margin-fix">Cog Ipsum</h3>
+						<ul class="sales-text sales-margin-fix-ul">
+							<li>Shiny Cog technology (SC)</li>
+							<li>Have you ever looked at a shiny rocks? it's shinier</li>
+							<li>Max speed of 5 MPH</li>
+						</ul>
+						<p class="sales-text sales-margin-fix">Purchase Price: $545</p>
+					</th>
+				</tr>
+			</table>
+			<table class="sales-showcase">
+				<tr>
+					<th class="showcase-left">
+						<img
+							src="bike_x300.png"
+							alt="picture of bike"
+							class="sales-img huerotate"
+						/>
+					</th>
+					<th class="showcase-right">
+						<h3 class="sales-title sales-margin-fix">Itchet sit Ipsum</h3>
+						<ul class="sales-text sales-margin-fix-ul">
+							<li>Advanced Sitting Aperatus technology (ASA)</li>
+							<li>SA will ensure you keep pedalling and not sitting!</li>
+							<li>Max speed of 9 MPH</li>
+						</ul>
+						<p class="sales-text sales-margin-fix">Purchase Price: $520</p>
+					</th>
+				</tr>
+			</table>
 		</div>
 	</body>
 </html>

@@ -20,6 +20,7 @@ ul {
 	width: 100%;
 	padding: 0;
 	z-index: 1;
+	line-height: 1;
 }
 
 #main-nav li {
@@ -30,7 +31,7 @@ ul {
 	padding-right: 25px;
 	font-weight: bold;
 	font-size: large;
-	color: #ffffff;
+	color: #f8ecf0;
 }
 
 .site-name:before {
@@ -38,21 +39,26 @@ ul {
 }
 
 .nav-item {
-	color: #fff;
+	color: #f8ecf0;
 	background-image: radial-gradient(circle, #be4772, #ae1a4f);
 	text-decoration: none;
 	padding: 5px 15px;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
+	-webkit-transition: 0.1s cubic-bezier(1, .04, 0, 1), 0.1s linear;
+	transition: 0.1s cubic-bezier(1, .04, 0, 1), 0.1s linear;
 }
 
-.nav-item:hover {
+.parent:hover > li a.nav-item {
+	background-color: #ae1a4f;
+	background-image: none;
+  }
+
+.parent:hover > li a.nav-item:hover {
 	background-color: #be4772;
 	background-image: radial-gradient(circle, #be4772, #ae1a4f);
+	color: #110207;
 	border-radius: 15px;
-	color: #000000;
 	font-size: 30px;
-}
+  }
 
 /**----------NAV END---------**/
 /**----------HOME START---------**/
@@ -74,7 +80,7 @@ ul {
 
 .div-wrapper {
 	margin: auto auto auto auto;
-	padding-top: 50px; /** makes nav and content look good**/
+	padding-top: 40px; /** makes nav and content look good**/
 	width: 725px;
 	height: max-content;
 }
@@ -230,7 +236,7 @@ body {
 	}
 
 	.div-wrapper {
-		padding-top: 75px;
+		padding-top: 70px;
 		width: 100%;
 	}
 }
@@ -252,7 +258,7 @@ body {
 	}
 
 	.div-wrapper {
-		padding-top: 150px;
+		padding-top: 125px;
 	}
 
 	address,
@@ -264,11 +270,11 @@ body {
 	h5,
 	h6,
 	ol,
-	figcaption,
-	.sales-margin-fix {
+	figcaption {
 		font-size: 3vw;
 	}
 }
+
 
 /**----------NAV pt.2 END---------**/
 /**----------LAB 5 START---------**/
@@ -285,12 +291,12 @@ body {
 .index-img {
 	width: 400px;
 	height: 300px;
-	background-image: url("bike.jpeg");
+	background-image: url("bike_400x300.png");
 	background-size: 100% 100%;
 }
 
 .index-img:hover {
-	background-image: url("bike2.jpg");
+	background-image: url("bike2_400x300.png");
 }
 
 audio {
@@ -303,38 +309,71 @@ video {
 
 /**----------LAB 5 SALES START---------**/
 
+.sales-video {
+	border: 3px solid;
+	border-image: linear-gradient(to bottom, #ae1a4f, #340717) 30;
+	box-sizing: border-box; /**fix for border not showing on some mobile devices**/
+	border-collapse: collapse; /**fix for border not showing on some mobile devices**/
+}
+
 .sales-showcase {
-	width: 99%;
-	background-color: beige;
-	border: 3px solid black;
-	height: 175px;
-	margin: 15px auto 5px auto;
-	overflow: hidden;
+	width: 98%;
+	background: #f8ecf0;
+	border: 3px solid #340717;
+	margin: 10px auto 5px auto;
+	box-sizing: border-box; /**fix for border not showing on some mobile devices**/
+	font-size: 0; /**fix for strange horizontal areas under img**/
+	border-collapse: collapse; /**fix for border not showing on some mobile devices**/
+	color: #110207;
 }
 
 .showcase-left {
-	width: 15vw;
+	padding: 0px; /**padding fix - removes padding that emerges**/
 	height: 100%;
-	float: left;
+	width: 150px;
 }
 
 .sales-img {
+	max-width: 150px;
+}
+
+.showcase-right {
 	width: auto;
-	height: 100%;
+	text-align: left;
+	padding: 0px; /**padding fix - removes padding that emerges**/
+}
+
+.sales-title {
+	font-size: initial;
+	font-weight: bold;
+}
+
+.sales-text {
+	font-size: initial;
+	font-weight: normal;
+}
+
+.sales-margin-fix-ul {
+	margin: 0px 5px 0px 30px;
 }
 
 .sales-margin-fix {
-	margin-left: 250px;
-	margin-bottom: 0px;
+	margin: 0px 5px 0px 15px;
+}
+
+@media screen and (max-width: 620px) {
+	.sales-title {
+		font-size: 3.5vw;
+	}
+
+	.sales-text {
+		font-size: 3.1vw;
+	}
 }
 
 /**----------LAB 5 SALES END---------**/
 /**----------LAB 5 END---------**/
 /**----------LAB 6 START---------**/
-
-.tr-service {
-	background-color: #dddddd;
-}
 
 .align-right {
 	text-align: right;
@@ -348,25 +387,27 @@ video {
 	text-align: center;
 }
 
-table,
-th {
+.services-th {
+	border: 2px solid #be4772;
+	border-collapse: collapse;
+	padding: 3px;
+	background-color: #ae1a4f;
+	color: #f8ecf0;
+}
+
+.services-table {
+	width: 97.8%;
+	margin: 0px 5px 0px 5px;
 	border: 2px solid #be4772;
 	border-collapse: collapse;
 }
 
-table {
-	width: 97.8%;
-	margin: 0px 5px 0px 5px;
+.services-tr {
+	background-color: #dddddd;
 }
 
-tr td,
-tr th {
+tr td {
 	padding: 3px;
-}
-
-tr th {
-	background-color: #ae1a4f;
-	color: #f8ecf0;
 }
 
 .th-cost {
@@ -414,3 +455,5 @@ tr th {
 }
 
 /**----------LAB 6 END---------**/
+/**----------LAB 7 START---------**/
+/**----------LAB 7 END---------**/
