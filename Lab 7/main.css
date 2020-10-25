@@ -20,7 +20,7 @@ ul {
 	width: 100%;
 	padding: 0;
 	z-index: 1;
-	line-height: 1;
+	line-height: 1
 }
 
 #main-nav li {
@@ -43,14 +43,14 @@ ul {
 	background-image: radial-gradient(circle, #be4772, #ae1a4f);
 	text-decoration: none;
 	padding: 5px 15px;
-	-webkit-transition: 0.1s cubic-bezier(1, .04, 0, 1), 0.1s linear;
-	transition: 0.1s cubic-bezier(1, .04, 0, 1), 0.1s linear;
+	-webkit-transition: 0.1s cubic-bezier(1, 0.04, 0, 1), 0.1s linear;
+	transition: 0.1s cubic-bezier(1, 0.04, 0, 1), 0.1s linear;
 }
 
 .parent:hover > li a.nav-item {
 	background-color: #ae1a4f;
 	background-image: none;
-  }
+}
 
 .parent:hover > li a.nav-item:hover {
 	background-color: #be4772;
@@ -58,7 +58,8 @@ ul {
 	color: #110207;
 	border-radius: 15px;
 	font-size: 30px;
-  }
+	margin-top: 2px;
+}
 
 /**----------NAV END---------**/
 /**----------HOME START---------**/
@@ -275,7 +276,6 @@ body {
 	}
 }
 
-
 /**----------NAV pt.2 END---------**/
 /**----------LAB 5 START---------**/
 
@@ -456,4 +456,130 @@ tr td {
 
 /**----------LAB 6 END---------**/
 /**----------LAB 7 START---------**/
+.contact-table {
+	width: 100%;
+	background-image: linear-gradient(#dddddd, #f8ecf0);
+	border: 3px solid #ae1a4f;
+	border-image: linear-gradient(to bottom, #ae1a4f, #340717);
+	border-image-slice: 1;
+	box-sizing: border-box; /**fix for border not showing on some mobile devices**/
+}
+
+.contact-form {
+	width: auto;
+	box-sizing: border-box; /**fix for border not showing on some mobile devices**/
+	border-collapse: collapse; /**fix for border not showing on some mobile devices**/
+	margin-left: 5px;
+	margin-right: 5px;
+	color: #110207;
+}
+
+.contact-section {
+	width: 100%;
+	height: max-content;
+	display: block;
+}
+
+.contact-th-left {
+	width: 23%;
+	height: 0px;
+	border: 0px;
+}
+
+.contact-th-right {
+	width: auto;
+	height: 0px;
+	border: 0px;
+}
+
+#contact-box-input {
+	width: 98%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #faf3f6;
+	border: 1px solid #70515c;
+}
+
+#contact-fieldset {
+	width: 180px;
+	height: 90px;
+	background-color: #faf3f6;
+	border: 1px solid #70515c;
+	float: left;
+}
+
+#contact-fieldset-div {
+	width: max-content;
+	margin-right: auto;
+	margin-left: auto;
+	height: max-content;
+}
+
+#contact-fieldset-legend {
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#contact-fieldset-input {
+	background-color: #faf3f6;
+}
+
+#contact-select {
+	background-color: #faf3f6;
+	border: 1px solid #70515c;
+	width: 98.4%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.contact-tr {
+	border-top: 1px dashed #c8c2c4;
+	border-collapse: initial;
+}
+
+@media screen and (max-width: 620px) {
+	#contact-fieldset {
+		font-size: smaller;
+	}
+}
+@media screen and (max-width: 520px) {
+	#contact-fieldset {
+		height: 80px;
+	}
+}
+
+.contact-h4 {
+	margin-top: 0px;
+}
+
+.contact-p {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+/**----------Response START---------**/
+.response-div {
+	width: 98%;
+	background-image: linear-gradient(#dddddd, #f8ecf0);
+	border: 3px solid #ae1a4f;
+	border-image: linear-gradient(to bottom, #ae1a4f, #f8ecf0);
+	border-image-slice: 1;
+	box-sizing: border-box; /**fix for border not showing on some mobile devices**/
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.response-h2 {
+	text-align: center;
+}
+
+.response-p {
+	text-align: center;
+}
+
+/**----------Response END---------**/
+
 /**----------LAB 7 END---------**/

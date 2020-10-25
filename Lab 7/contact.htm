@@ -46,5 +46,258 @@ Tested: Oct 18, 2020; Passed on Firefox, Chrome, and Safari browsers.
 			</ul>
 		</nav>
 		<!-- NAV END -->
+		<!-- FORM START -->
+		<div class="div-wrapper">
+			<form action="response.htm" class="contact-form">
+				<table class="contact-table">
+					<tr>
+						<th class="contact-th-left"></th>
+						<th class="contact-th-right"></th>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<h4 class="contact-h4">Welcome to the contact page!</h1>
+							<p class="contact-p">Go ahead and fill out the form, and submit it, and we will get back to you as soon as possilbe.</p>
+						</td>
+					</tr>
+					<!-- Full Name -->
+					<tr>
+						<td class="contact-tr">
+							<label for="FullName">Full Name:</label>
+						</td>
+						<td class="contact-tr">
+							<input
+								type="text"
+								id="contact-box-input"
+								name="FullName"
+								value=""
+								minlength="15"
+								maxlength="25"
+								required
+							/>
+						</td>
+					</tr>
+					<!-- Address -->
+					<tr>
+						<td class="contact-tr">
+							<label for="Address">Address:</label>
+						</td>
+						<td class="contact-tr">
+							<input
+								type="text"
+								id="contact-box-input"
+								name="Address"
+								value=""
+								minlength="15"
+								maxlength="50"
+								required
+							/>
+						</td>
+					</tr>
+					<!-- City -->
+					<tr>
+						<td class="contact-tr"><label for="City">City:</label></td>
+						<td class="contact-tr">
+							<input
+								type="text"
+								id="contact-box-input"
+								name="City"
+								value=""
+								minlength="4"
+								maxlength="25"
+								required
+							/>
+						</td>
+					</tr>
+					<!-- State -->
+					<tr>
+						<td class="contact-tr"><label for="State">State:</label></td>
+						<td class="contact-tr">
+							<select id="contact-select" name="State" required>
+								<option value="" selected></option>
+								<option value="Alaska">Alaska</option>
+								<option value="Arizona">Arizona</option>
+								<option value="Arkansas">Arkansas</option>
+								<option value="California">California</option>
+								<option value="Colorado">Colorado</option>
+								<option value="Connecticut">Connecticut</option>
+								<option value="Delaware">Delaware</option>
+								<option value="Florida">Florida</option>
+								<option value="Georgia">Georgia</option>
+								<option value="Hawaii">Hawaii</option>
+							</select>
+						</td>
+					</tr>
+					<!-- Zip Code -->
+					<tr>
+						<td class="contact-tr"><label for="ZipCode">Zip Code:</label></td>
+						<td class="contact-tr">
+							<input
+								id="contact-box-input"
+								name="ZipCode"
+								type="text"
+								pattern="(\d{5}([\-]\d{4})?)"
+								value=""
+								minlength="5"
+								maxlength="10"
+								required
+							/>
+						</td>
+					</tr>
+					<!-- Phone Number -->
+					<tr>
+						<td class="contact-tr">
+							<label for="PhoneNumber">Phone Number:</label>
+						</td>
+						<td class="contact-tr">
+							<input
+								type="tel"
+								id="contact-box-input"
+								name="PhoneNumber"
+								minlength="10"
+								maxlength="12"
+								pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+								required
+							/>
+						</td>
+					</tr>
+					<!-- Email Address -->
+					<tr>
+						<td class="contact-tr">
+							<label for="EmailAddress">Email Address:</label>
+						</td>
+						<td class="contact-tr">
+							<input
+								type="email"
+								id="contact-box-input"
+								name="EmailAddress"
+								required
+								minlength="10"
+								maxlength="25"
+							/>
+						</td>
+					</tr>
+					<!-- Submission Date -->
+					<tr>
+						<td class="contact-tr">
+							<label for="SubmissionDate">Submission Date:</label>
+						</td>
+						<td class="contact-tr">
+							<input
+								type="date"
+								id="contact-box-input"
+								name="SubmissionDate"
+								required
+							/>
+						</td>
+					</tr>
+					<tr>
+						<td class="contact-tr" colspan="2">
+							<div id="contact-fieldset-div">
+								<!-- Inquiry Type -->
+								<fieldset id="contact-fieldset">
+									<legend id="contact-fieldset-legend">Inquiry Type</legend>
+									<input
+										type="checkbox"
+										name="Sales"
+										value="Sales"
+										id="contact-fieldset-input"
+										required
+									/>
+									<label for="Sales">Sales</label><br />
+									<input
+										type="checkbox"
+										name="Service"
+										value="Service"
+										id="contact-fieldset-input"
+										required
+									/>
+									<label for="Service">Service</label><br />
+									<input
+										type="checkbox"
+										name="Rental"
+										value="Rental"
+										id="contact-fieldset-input"
+										required
+									/>
+									<label for="Rental">Rental</label>
+								</fieldset>
+								<fieldset id="contact-fieldset">
+									<legend id="contact-fieldset-legend">Bicycle Type</legend>
+									<input
+										type="radio"
+										name="BicycleType"
+										value="Maximus Ipsum"
+										id="contact-fieldset-input"
+										required
+									/>
+									<label for="Maximus Ipsum">Maximus Ipsum</label><br />
+									<input
+										type="radio"
+										name="BicycleType"
+										value="Magma sit Ipsum"
+										id="contact-fieldset-input"
+										required
+									/>
+									<label for="Magma sit Ipsum">Magma sit Ipsum</label><br />
+									<input
+										type="radio"
+										name="BicycleType"
+										value="Cog Ipsum"
+										id="contact-fieldset-input"
+										required
+									/>
+									<label for="Cog Ipsum">Cog Ipsum</label><br />
+									<input
+										type="radio"
+										name="BicycleType"
+										value="Itchet sit Ipsum"
+										id="contact-fieldset-input"
+										required
+									/>
+									<label for="Itchet sit Ipsum">Itchet sit Ipsum</label>
+								</fieldset>
+							</div>
+						</td>
+					</tr>
+					<!-- Create Password -->
+					<tr>
+						<td class="contact-tr">
+							<label for="CreatePassword">Create Password:</label>
+						</td>
+						<td class="contact-tr">
+							<input
+								type="password"
+								id="contact-box-input"
+								name="CreatePassword"
+								required
+							/>
+						</td>
+					</tr>
+					<!-- Message -->
+					<tr>
+						<td class="contact-tr"><label for="Message">Message:</label></td>
+						<td class="contact-tr">
+							<input
+								type="text"
+								id="contact-box-input"
+								name="Message"
+								required
+							/>
+						</td>
+					</tr>
+					<tr>
+						<td class="contact-tr" colspan="2">
+							<div id="contact-fieldset-div">
+								<input type="submit" value="Submit" /><input
+									type="reset"
+									value="Reset"
+								/>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
 	</body>
 </html>
