@@ -618,3 +618,49 @@
 }
 
 /**----------SIGN-UP END---------**/
+/**----------ABOUT START---------**/
+
+.about-wrapper {
+	overflow: hidden;
+	width: 100%;
+	max-width: 980px;
+	min-height: calc(100vh - 86px);
+	height: max-content;
+	margin: 86px auto 0px auto;
+}
+
+.about-mission-wrapper {
+	border-bottom: 1px solid #efeff7;
+	margin: 15px;
+	width: calc(100% - 30px);
+}
+
+.about-boxing {
+	padding: 15px;
+	background-color: #26264b;
+	width: max-content;
+	max-width: calc(100% - 30px);
+}
+
+.about-div-flex {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.about-exurbs {
+	width: 400px;
+	border-bottom: 1px solid #efeff7;
+	margin: 15px;
+} 
+
+.about-goals-ul {
+	padding: 15px 15px 15px 25px;
+	background-color: #26264b;
+	width: max-content;
+	max-width: calc(100% - 30px);
+}
+
+/**----------ABOUT END---------**/
