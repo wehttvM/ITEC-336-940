@@ -1,8 +1,19 @@
-/**----------NORM START---------**/
-* {
-	font-family: "Lucida Console", Courier, monospace;
-	z-index: -1;
+/*--FONTS - WEEK 11 START--**/
+
+@font-face {
+	font-family: "Arcon";
+    src: url("Arcon-Regular.otf") format("opentype");
 }
+
+/*--FONTS - WEEK 11 END--**/
+/**----------NORM START---------**/
+
+* {
+	font-family: "Arcon", "Lucida Console", Courier, monospace;
+	z-index: -1;
+	letter-spacing: 1px;
+}
+
 /**----------NORM END---------**/
 /**----------NAV START---------**/
 
