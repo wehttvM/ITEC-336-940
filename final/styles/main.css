@@ -14,6 +14,84 @@
 }
 
 /**----------NORM END---------**/
+/**----------GENERAL START---------**/
+
+.height-fix {
+	height: max-content;
+	min-height: 100vh;
+}
+
+.margin-fix {
+	margin-top: 86px;
+	width: 100%;
+	height: max-content;
+}
+
+.display-wrapper {
+	max-width: 980px;
+	width: 100%;
+	margin: 25px auto 0px auto;
+}
+
+.display {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.display-item:hover a > h3 {
+	max-width: 170px;
+}
+
+.display-item {
+	background-color: #191931;
+	width: 150px;
+	height: max-content;
+	display: flex;
+	margin: 20px;
+	overflow: hidden;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 10px;
+}
+
+.display-img {
+	width: 150px;
+	height: 150px;
+	margin: 0px auto 0px auto;
+	display: block;
+}
+
+.display-item:hover {
+	width: 180px;
+	margin: 5px;
+}
+
+.display-item:hover > a img.display-img {
+	width: 180px;
+	height: 180px;
+}
+
+.display-item:hover > a.display-link {
+	padding: 5px;
+}
+
+.display-link {
+	width: calc(max-content - 10px);
+	max-width: 140px;
+	background-color: #2f2f5c;
+	text-align: center;
+	padding: 5px;
+	margin-top: 15px;
+	text-decoration: none;
+	font-weight: bolder;
+}
+
+/**----------GENERAL END---------**/
 /**----------NAV START---------**/
 
 .main-nav {
@@ -98,7 +176,6 @@
 }
 
 /**----------NAV END---------**/
-
 /**----------BODY START---------**/
 
 .body-background-wrapper {
@@ -116,10 +193,10 @@
 	display: flex;
 	width: 100%;
 	max-width: 1080px;
-	height: 100vh;
 	margin: 0px auto 0px auto;
 	background-color: #0c0c17;
 }
+
 /**----------BODY END---------**/
 /**----------FOOTER START---------**/
 
@@ -183,69 +260,8 @@
 }
 
 /**----------FOOTER END---------**/
-/**----------ARTISTS START---------**/
-
-.body-fix {
-	height: max-content;
-	min-height: 100vh;
-}
-
-.artists-wrapper {
-	width: 100%;
-	max-width: 980px;
-	padding: 100px;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.artists-item {
-	background-color: #191931;
-	width: 150px;
-	height: max-content;
-	max-height: 250px;
-	display: flex;
-	flex-direction: column;
-	margin: 15px;
-	border-radius: 5px;
-	word-wrap: break-word;
-	overflow: hidden;
-}
-
-.artists-item-link {
-	text-decoration: none;
-}
-
-.artists-img {
-	width: 150px;
-	height: 150px;
-	background-image: url("poster.png");
-	background-size: 100% 100%;
-}
-
-.artists-h3 {
-	text-align: center;
-	padding: 0px;
-	margin: 0px;
-}
-
-.artists-item:hover {
-	width: 175px;
-	border-radius: 10px;
-}
-
-.artists-item:hover > a div.artists-img {
-	width: 175px;
-	height: 175px;
-}
-
-/**----------ARTISTS END---------**/
 /**----------ARTIST START---------**/
 
-.artist-wrapper {
-	margin-top: 86px;
-	width: 100%;
-	height: max-content;
-}
 
 .artist-showcase {
 	max-width: 1080px;
@@ -254,6 +270,7 @@
 	box-sizing: border-box;
 	border-collapse: collapse;
 	margin: 0px auto 0px auto;
+	overflow: hidden;
 }
 
 .artist-left {
@@ -266,6 +283,7 @@
 	text-align: left;
 	padding: 0px; /**padding fix - removes padding that emerges**/
 	vertical-align: top;
+	height: max-content;
 	padding-left: 15px;
 }
 
@@ -276,25 +294,12 @@
 	background-size: 100% 100%;
 }
 
-@media screen and (max-width: 620px) {
-	.artist-img {
-		width: 150px;
-		height: 150px;
-	}
-	.artist-left {
-		width: 150px;
-		padding: 5px;
-	}
-
-	.artist-right {
-		padding-left: 5px;
-	}
-}
-
 .artist-accessibility {
 	background-color: #2f2f5c;
 	width: max-content;
+	max-width: calc(100vw - (100vw - 1080px) - 365px);
 	padding: 5px;
+	word-wrap: break-word;
 }
 
 .artist-releases {
@@ -427,6 +432,33 @@
 .artist-item:hover > a img.artist-item-img {
 	width: 180px;
 	height: 180px;
+}
+
+@media screen and (max-width: 1080px) {
+	.artist-accessibility {
+		max-width: calc(100vw - 390px);
+	}
+}
+
+
+@media screen and (max-width: 620px) {
+	.artist-img {
+		width: 150px;
+		height: 150px;
+	}
+
+	.artist-left {
+		width: 150px;
+		padding: 5px;
+	}
+
+	.artist-right {
+		padding-left: 5px;
+	}
+
+	.artist-accessibility {
+		max-width: calc(100vw - 200px);
+	}
 }
 
 /**----------ARTIST END---------**/
