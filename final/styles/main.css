@@ -99,14 +99,6 @@
 	font-weight: bolder;
 }
 
-/**--@media screen and (max-width: 1080px) {
-	.display {
-		overflow-y: scroll;
-		max-height: 50vh;
-		max-width: calc(100% - 10px);
-	}
-}--**/
-
 /**----------DISPLAY END---------**/
 /**----------TABLE START---------**/
 
@@ -182,6 +174,23 @@
 	border-left: 1px solid #efeff7;
 }
 
+
+.table-footer-left {
+	border-top: 1px solid #efeff7;
+	border-left: 0px solid #efeff7;
+	text-align: center;
+	font-weight: bold;
+	padding: 3px 3px 3px 3px;
+}
+
+.table-footer-right {
+	border-top: 1px solid #efeff7;
+	border-left: 1px solid #efeff7;
+	text-align: center;
+	font-weight: bold;
+	padding: 3px 3px 3px 3px;
+}
+
 .table-th:last-child,
 td:last-child {
 	border-right: 0px solid #efeff7;
@@ -201,7 +210,10 @@ td:last-child {
 	.table-pos,
 	.table-title,
 	.artist-type,
-	.table-play-time {
+	.table-play-time,
+	.table-footer-left,
+	.table-footer-right
+	 {
 		font-size: calc(16px + 3 * ((100vw - 1080px) / (1080 - 300)));
 	}
 }
