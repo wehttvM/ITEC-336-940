@@ -90,7 +90,7 @@
 }
 
 .display-link {
-	width: calc(max-content - 10px);
+	width: max-content;
 	max-width: 140px;
 	background-color: #2f2f5c;
 	text-align: center;
@@ -273,6 +273,7 @@ td:last-child {
 	text-decoration: none;
 	margin: 0px;
 	font-size: 40px;
+	font-weight: bold;
 }
 
 .site-name:hover {
@@ -390,6 +391,8 @@ td:last-child {
 	border-image: linear-gradient(to bottom, #fff, rgba(0, 0, 0, 0)) 1 100%;
 	border-top: 1px solid #fff;
 	box-sizing: border-box;
+	align-items: center;
+	flex-direction: column;
 }
 
 .footer-div:last-child {
@@ -402,18 +405,15 @@ td:last-child {
 	margin: 20px auto auto auto;
 }
 
-.footer-ul h3 {
-	margin: 15px 0px 15px 0px;
+.footer-h3 {
+	margin: 30px 0px 15px 0px;
 	text-align: center;
 	text-decoration: underline;
 }
 
-.footer-li {
-	margin-top: 3px;
-	text-align: center;
-}
-
 .footer-a {
+	margin: 3px 0px 0px 0px;
+	text-align: center;
 	text-decoration: none;
 }
 
@@ -426,7 +426,7 @@ td:last-child {
 		font-size: calc(16px + 4 * ((100vw - 1080px) / (1080 - 300)));
 	}
 
-	.footer-ul h3 {
+	.footer-h3 {
 		font-size: calc(19px + 4 * ((100vw - 1080px) / (1080 - 300)));
 	}
 }
