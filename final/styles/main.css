@@ -38,7 +38,7 @@
 .display-wrapper {
 	max-width: 980px;
 	width: 100%;
-	margin: 25px auto 0px auto;
+	margin: 15px auto 15px auto;
 }
 
 .display {
@@ -48,6 +48,7 @@
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: row;
+	margin: 15px 0px 15px 0px;
 }
 
 .display-item:hover a > h3 {
@@ -59,7 +60,7 @@
 	width: 150px;
 	height: max-content;
 	display: flex;
-	margin: 20px;
+	margin: 15px;
 	overflow: hidden;
 	align-items: center;
 	justify-content: center;
@@ -76,7 +77,7 @@
 
 .display-item:hover {
 	width: 180px;
-	margin: 5px;
+	margin: 0px;
 }
 
 .display-item:hover > a img.display-img {
@@ -174,7 +175,6 @@
 	border-left: 1px solid #efeff7;
 }
 
-
 .table-footer-left {
 	border-top: 1px solid #efeff7;
 	border-left: 0px solid #efeff7;
@@ -212,8 +212,7 @@ td:last-child {
 	.artist-type,
 	.table-play-time,
 	.table-footer-left,
-	.table-footer-right
-	 {
+	.table-footer-right {
 		font-size: calc(16px + 3 * ((100vw - 1080px) / (1080 - 300)));
 	}
 }
@@ -462,7 +461,6 @@ td:last-child {
 	padding: 0px; /**padding fix - removes padding that emerges**/
 	vertical-align: top;
 	height: max-content;
-	padding-left: 15px;
 }
 
 .artist-img {
@@ -493,7 +491,7 @@ td:last-child {
 .artist-releases-h3 {
 	width: max-content;
 	text-decoration: underline;
-	margin: 15px 0px 5px 15px;
+	margin: 15px 0px 0px 15px;
 }
 
 @media screen and (max-width: 1080px) {
@@ -520,10 +518,6 @@ td:last-child {
 	.artist-left {
 		width: 150px;
 		padding: 5px;
-	}
-
-	.artist-right {
-		padding-left: 5px;
 	}
 
 	.artist-header-font {
