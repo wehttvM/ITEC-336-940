@@ -722,6 +722,9 @@ td:last-child {
 	margin: 0px;
 }
 
+td label {
+	cursor: text;
+}
 /**----------SIGN-UP END---------**/
 /**----------ABOUT START---------**/
 
