@@ -649,8 +649,6 @@ td:last-child {
 
 .home-footer {
 	background-color: #090912;
-	background-image: unset;
-	width: 100%;
 }
 
 @media screen and (max-width: 1080px) {
