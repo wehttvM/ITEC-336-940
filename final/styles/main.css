@@ -385,12 +385,12 @@ td:last-child {
 	height: 100%;
 	width: 150px;
 	display: flex;
-
 	border-right: 1px solid #fff;
 	border-right-width: 1px;
 	border-right-style: solid;
 	border-image: linear-gradient(to bottom, #fff, rgba(0, 0, 0, 0)) 1 100%;
 	border-top: 1px solid #fff;
+	box-sizing: border-box;
 }
 
 .footer-div:last-child {
@@ -403,8 +403,15 @@ td:last-child {
 	margin: 20px auto auto auto;
 }
 
+.footer-ul h3 {
+	margin: 15px 0px 15px 0px;
+	text-align: center;
+	text-decoration: underline;
+}
+
 .footer-li {
 	margin-top: 3px;
+	text-align: center;
 }
 
 .footer-a {
@@ -417,11 +424,11 @@ td:last-child {
 
 @media screen and (max-width: 1080px) {
 	.footer-a {
-		font-size: calc(16px + 3 * ((100vw - 1080px) / (1080 - 300)));
+		font-size: calc(16px + 4 * ((100vw - 1080px) / (1080 - 300)));
 	}
 
 	.footer-ul h3 {
-		font-size: calc(19px + 3 * ((100vw - 1080px) / (1080 - 300)));
+		font-size: calc(19px + 4 * ((100vw - 1080px) / (1080 - 300)));
 	}
 }
 
