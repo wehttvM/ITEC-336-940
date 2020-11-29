@@ -93,6 +93,14 @@
 	font-weight: bolder;
 }
 
+/**--@media screen and (max-width: 1080px) {
+	.display {
+		overflow-y: scroll;
+		max-height: 50vh;
+		max-width: calc(100% - 10px);
+	}
+}--**/
+
 /**----------DISPLAY END---------**/
 /**----------TABLE START---------**/
 
@@ -133,16 +141,17 @@
 	background-color: #090912;
 }
 
+.table-pos,
 .artist-year {
-	text-align: center;
-	width: 100px;
-}
-
-.table-pos {
 	text-align: center;
 	width: 10px;
 	max-width: 20px;
 	padding: inherit;
+}
+
+.artist-year {
+	width: 100px;
+	max-width: 200px;
 }
 
 .table-title {
@@ -156,7 +165,7 @@
 .artist-type {
 	text-align: center;
 	width: 100px;
-	border-left: 1px solid #efeff7;
+	border-left: 0px solid #efeff7;
 	padding: inherit;
 }
 
@@ -182,10 +191,13 @@ td:last-child {
 		width: 100%;
 	}
 
-	.artist-year,.table-pos,.table-title,.artist-type,.table-play-time{
+	.artist-year,
+	.table-pos,
+	.table-title,
+	.artist-type,
+	.table-play-time {
 		font-size: calc(16px + 3 * ((100vw - 1080px) / (1080 - 300)));
 	}
-	
 }
 
 @media screen and (max-width: 780px) {
@@ -258,7 +270,7 @@ td:last-child {
 	background-color: #2f2f5c;
 }
 
-.logo-img{
+.logo-img {
 	width: 50px;
 	height: 50px;
 }
@@ -297,7 +309,7 @@ td:last-child {
 		font-size: calc(40px + 12 * ((100vw - 1080px) / (1080 - 300)));
 	}
 
-	.logo-img{
+	.logo-img {
 		width: calc(50px + 15 * ((100vw - 1080px) / (1080 - 300)));
 		height: calc(50px + 15 * ((100vw - 1080px) / (1080 - 300)));
 	}
@@ -387,6 +399,17 @@ td:last-child {
 	color: #bfbfc5;
 }
 
+@media screen and (max-width: 1080px) {
+	.footer-a {
+		font-size: calc(16px + 3 * ((100vw - 1080px) / (1080 - 300)));
+	}
+
+	.footer-ul h3 {
+		font-size: calc(19px + 3 * ((100vw - 1080px) / (1080 - 300)));
+	}
+}
+
+
 /**----------FOOTER END---------**/
 /**----------ARTIST START---------**/
 
@@ -428,6 +451,7 @@ td:last-child {
 	padding: 5px;
 	word-wrap: break-word;
 }
+
 .artist-header-font {
 	background-color: #2f2f5c;
 	width: max-content;
@@ -435,6 +459,7 @@ td:last-child {
 	padding: 5px;
 	word-wrap: break-word;
 	font-size: 32px;
+	margin: 15px 0px 15px 0px;
 }
 
 .artist-releases-h3 {
@@ -452,7 +477,7 @@ td:last-child {
 	.artist-header-font {
 		font-size: calc(32px + 15 * ((100vw - 1080px) / (1080 - 300)));
 	}
-	
+
 	.artist-accessibility {
 		font-size: calc(16px + 3 * ((100vw - 1080px) / (1080 - 300)));
 	}
@@ -473,11 +498,13 @@ td:last-child {
 		padding-left: 5px;
 	}
 
+	.artist-header-font {
+		margin: 5px 0px 5px 0px;
+	}
 	.artist-accessibility,
 	.artist-header-font {
-		max-width: calc(100vw - 200px);	
+		max-width: calc(100vw - 200px);
 	}
-	
 }
 
 /**----------ARTIST END---------**/
@@ -705,7 +732,7 @@ td:last-child {
 	width: 400px;
 	border-bottom: 1px solid #efeff7;
 	margin: 15px;
-} 
+}
 
 .about-goals-ul {
 	padding: 15px 15px 15px 25px;
