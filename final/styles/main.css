@@ -27,6 +27,12 @@
 	height: max-content;
 }
 
+@media screen and (max-width: 1080px) {
+	.margin-fix {
+		margin-top: 73px;
+	}
+}
+
 /**----------DISPLAY START---------**/
 
 .display-wrapper {
@@ -341,8 +347,6 @@ td:last-child {
 /**----------FOOTER START---------**/
 
 .footer-wrapper {
-	background-color: #0c0c17;
-	background-image: url("images/cross-crop-small.png");
 	background-repeat: repeat;
 	width: 100%;
 	height: 250px;
@@ -409,6 +413,11 @@ td:last-child {
 	}
 }
 
+@media screen and (max-width: 780px) {
+	.footer-wrapper {
+		height: 200px;
+	}
+}
 
 /**----------FOOTER END---------**/
 /**----------ARTIST START---------**/
@@ -623,6 +632,13 @@ td:last-child {
 	background-color: #090912;
 	background-image: unset;
 	width: 100%;
+}
+
+@media screen and (max-width: 1080px) {
+	.home-graphic {
+		margin-top: 73px;
+		height: calc(100vh - 73px);
+	}
 }
 
 /**----------HOME END---------**/
