@@ -319,8 +319,8 @@ td:last-child {
 		font-size: calc(16px + 3 * ((100vw - 1080px) / (1080 - 300)));
 	}
 
-	.nav-item:hover {
-		font-size: calc(30px + 3 * ((100vw - 1080px) / (1080 - 300)));
+	.item-wrapper:hover > a.nav-item:hover {
+		font-size: calc(30px + 8 * ((100vw - 1080px) / (1080 - 300)));
 	}
 
 	.site-name {
