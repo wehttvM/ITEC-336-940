@@ -163,7 +163,7 @@
 .artist-type {
 	text-align: center;
 	width: 100px;
-	border-left: 0px solid #efeff7;
+	border-left: 1px solid #efeff7;
 	padding: inherit;
 }
 
