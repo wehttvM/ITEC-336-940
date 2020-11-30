@@ -9,8 +9,8 @@
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
 	text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
-	-webkit-transition: 0.1s cubic-bezier(1, 0.04, 0, 1), 0.1s linear;
-	transition: 0.1s cubic-bezier(1, 0.04, 0, 1), 0.1s linear;
+	-webkit-transition: 0.1s cubic-bezier(1, 0.04, 0, 1), 0.125s linear;
+	transition: 0.1s cubic-bezier(1, 0.04, 0, 1), 0.125s linear;
 }
 
 /**----------NORM END---------**/
