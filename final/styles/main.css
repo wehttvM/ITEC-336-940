@@ -466,8 +466,6 @@ td:last-child {
 .artist-img {
 	width: 300px;
 	height: 300px;
-	background-image: url("poster.png");
-	background-size: 100% 100%;
 }
 
 .artist-accessibility {
