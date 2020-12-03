@@ -29,7 +29,7 @@
 
 @media screen and (max-width: 480px) {
 	.margin-fix {
-		margin-top: 30px;
+		margin-top: 35px;
 	}
 }
 
@@ -102,8 +102,16 @@
 
 @media screen and (max-width: 480px) {
 	.display {
-		height: 40vh;
+		height: 60vh;
 		overflow-y: scroll;
+	}
+
+	.display-artists {
+		height: 60vh;
+	}
+
+	.display-albums {
+		height: 80vh;
 	}
 }
 
@@ -685,7 +693,7 @@ td:last-child {
 
 @media screen and (max-width: 1080px) {
 	.home-graphic {
-		margin-top: 30px;
+		margin-top: 35px;
 		height: calc(100vh - 30px);
 	}
 }
