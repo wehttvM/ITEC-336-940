@@ -27,9 +27,9 @@
 	height: max-content;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 480px) {
 	.margin-fix {
-		margin-top: 73px;
+		margin-top: 30px;
 	}
 }
 
@@ -99,6 +99,14 @@
 	text-decoration: none;
 	font-weight: bolder;
 }
+
+@media screen and (max-width: 480px) {
+	.display {
+		height: 40vh;
+		overflow-y: scroll;
+	}
+}
+
 
 /**----------DISPLAY END---------**/
 /**----------TABLE START---------**/
@@ -314,6 +322,16 @@ td:last-child {
 	font-size: 30px;
 }
 
+.responsive-img-item {
+	display: none;
+	width: 35px;
+	height: 35px;
+	margin-right: 3px;
+	padding: 0px;
+}
+
+
+
 @media screen and (max-width: 1080px) {
 	.nav-item {
 		font-size: calc(16px + 3 * ((100vw - 1080px) / (1080 - 300)));
@@ -332,6 +350,25 @@ td:last-child {
 	.logo-img {
 		width: calc(50px + 25 * ((100vw - 1080px) / (1080 - 300)));
 		height: calc(50px + 25 * ((100vw - 1080px) / (1080 - 300)));
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.nav-head-wrapper {
+		display: none;
+	}
+
+	.responsive-img-item {
+		display: block;
+		padding: 0px;
+	}
+
+	.home-item {
+		display: none;
+	}
+
+	.nav-item {
+		font-weight: bold;
 	}
 }
 
@@ -438,6 +475,7 @@ td:last-child {
 		height: 200px;
 	}
 }
+
 
 /**----------FOOTER END---------**/
 /**----------ARTIST START---------**/
@@ -647,8 +685,27 @@ td:last-child {
 
 @media screen and (max-width: 1080px) {
 	.home-graphic {
-		margin-top: 61px;
-		height: calc(100vh - 61px);
+		margin-top: 30px;
+		height: calc(100vh - 30px);
+	}
+}
+
+@media screen and (max-width: 1080px) {
+	.home-graphic {
+		margin-top: 30px;
+		height: calc(100vh - 30px);
+	}
+}
+
+@media screen and (max-width: 480px) and (max-height: 980px) {
+	.home-graphic {
+		margin-top: 30px;
+		height: calc(100vh - 233px);
+	}
+
+	.home-sign-up-wrapper {
+		bottom: 45vh;
+		right: 20%;
 	}
 }
 
