@@ -317,6 +317,8 @@ td:last-child {
 @media screen and (max-width: 1080px) {
 	.nav-item {
 		font-size: calc(16px + 3 * ((100vw - 1080px) / (1080 - 300)));
+		padding-right: calc(15px + 5 * ((100vw - 1080px) / (1080 - 300)));
+		padding-left: calc(15px + 5 * ((100vw - 1080px) / (1080 - 300)));
 	}
 
 	.item-wrapper:hover > a.nav-item:hover {
@@ -324,12 +326,12 @@ td:last-child {
 	}
 
 	.site-name {
-		font-size: calc(40px + 12 * ((100vw - 1080px) / (1080 - 300)));
+		font-size: calc(40px + 15 * ((100vw - 1080px) / (1080 - 300)));
 	}
 
 	.logo-img {
-		width: calc(50px + 15 * ((100vw - 1080px) / (1080 - 300)));
-		height: calc(50px + 15 * ((100vw - 1080px) / (1080 - 300)));
+		width: calc(50px + 25 * ((100vw - 1080px) / (1080 - 300)));
+		height: calc(50px + 25 * ((100vw - 1080px) / (1080 - 300)));
 	}
 }
 
@@ -645,8 +647,8 @@ td:last-child {
 
 @media screen and (max-width: 1080px) {
 	.home-graphic {
-		margin-top: 73px;
-		height: calc(100vh - 73px);
+		margin-top: 61px;
+		height: calc(100vh - 61px);
 	}
 }
 
