@@ -358,6 +358,18 @@ td:last-child {
 		width: calc(50px + 25 * ((100vw - 1080px) / (1080 - 300)));
 		height: calc(50px + 25 * ((100vw - 1080px) / (1080 - 300)));
 	}
+
+	.black-line {
+		display: none;
+	}
+
+	.style-line {
+		display: none;
+	}
+
+	.main-nav {
+		top: 0px;
+	}
 }
 
 @media screen and (max-width: 480px) {
