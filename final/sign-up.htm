@@ -79,10 +79,6 @@ Tested: Nov 29, 2020; Passed on Firefox, Chrome, and Safari browsers.
 					</p>
 					<table class="sign-up-table">
 						<tr>
-							<th></th>
-							<th></th>
-						</tr>
-						<tr>
 							<td><label>Username:</label></td>
 							<td>
 								<input
@@ -100,11 +96,81 @@ Tested: Nov 29, 2020; Passed on Firefox, Chrome, and Safari browsers.
 							<td><label>Password:</label></td>
 							<td>
 								<input
-									type="text"
+									type="password"
 									name="Password"
 									value=""
 									minlength="8"
 									maxlength="250"
+									required
+									class="sign-up-input"
+								/>
+							</td>
+						</tr>
+						<tr>
+							<td><label>Email:</label></td>
+							<td>
+								<input
+									type="email"
+									name="Email"
+									value=""
+									minlength="8"
+									maxlength="250"
+									required
+									class="sign-up-input"
+									pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+								/>
+							</td>
+						</tr>
+						<tr>
+							<td><label>Gender:</label></td>
+							<td class="sign-up-radio-flex">
+								<div class="sign-up-radio-div">
+									<input
+										type="radio"
+										id="male"
+										name="gender"
+										value="male"
+										class="sign-up-input sign-up-radio-input"
+									/>
+									<label for="male" class="sign-up-input sign-up-radio-label"
+										>Male</label
+									>
+								</div>
+								<div class="sign-up-radio-div">
+									<input
+										type="radio"
+										id="female"
+										name="gender"
+										value="female"
+										class="sign-up-input sign-up-radio-input"
+									/>
+									<label for="female" class="sign-up-input sign-up-radio-label">
+										Female</label
+									>
+								</div>
+								<div class="sign-up-radio-div">
+									<input
+										type="radio"
+										id="other"
+										name="gender"
+										value="other"
+										class="sign-up-input sign-up-radio-input"
+									/>
+									<label for="other" class="sign-up-input sign-up-radio-label">
+										Other</label
+									>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td><label>Age:</label></td>
+							<td>
+								<input
+									type="number"
+									name="age"
+									value=""
+									min="13"
+									max="130"
 									required
 									class="sign-up-input"
 								/>

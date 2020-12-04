@@ -100,7 +100,7 @@
 	font-weight: bolder;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
 	.display {
 		height: 60vh;
 		overflow-y: scroll;
@@ -114,7 +114,6 @@
 		height: 80vh;
 	}
 }
-
 
 /**----------DISPLAY END---------**/
 /**----------TABLE START---------**/
@@ -339,8 +338,6 @@ td:last-child {
 	padding: 0px;
 }
 
-
-
 @media screen and (max-width: 1080px) {
 	.nav-item {
 		font-size: calc(16px + 3 * ((100vw - 1080px) / (1080 - 300)));
@@ -485,7 +482,6 @@ td:last-child {
 		height: 200px;
 	}
 }
-
 
 /**----------FOOTER END---------**/
 /**----------ARTIST START---------**/
@@ -727,9 +723,11 @@ td:last-child {
 	width: 100%;
 	height: calc(100vh - 86px);
 	margin-top: 86px;
+	margin-bottom: 15px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
 }
 
 .sign-up-form {
@@ -743,8 +741,9 @@ td:last-child {
 	max-width: 100%;
 	height: max-content;
 	background-color: #26264b;
-	margin: 0px auto 0px auto;
-	padding: 15px 0px 15px 0px;
+	margin: 15px auto;
+	box-sizing: border-box;
+	border-collapse: collapse;
 }
 
 .center {
@@ -761,6 +760,43 @@ td:last-child {
 	border: 0px solid #000;
 	margin: 5px 0px 5px 0px;
 	color: #bfbfc5;
+}
+
+.sign-up-radio-flex {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.sign-up-radio-input {
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+	display: block;
+	box-sizing: content-box;
+	margin-top: 5px;
+	margin-left: 1px;
+	float: left;
+	cursor: pointer;
+}
+
+.sign-up-radio-label {
+	padding-left: auto;
+	display: block;
+	box-sizing: content-box;
+	margin: 0px;
+	margin-top: 3px;
+	padding-left: 17px;
+	cursor: pointer;
+}
+
+.sign-up-radio-div {
+	height: 20px;
+	overflow: hidden;
+	padding: 8px 0px;
+}
+
+.sign-up-radio-div:first-child {
+	padding: 3px 0px;
 }
 
 .sign-up-input:active,
@@ -792,6 +828,33 @@ td:last-child {
 td label {
 	cursor: text;
 }
+
+table.sign-up-table tr{
+	border-top: 1px dashed #000 ;
+}
+
+
+@media screen and (max-height: 720px) and (max-width: 480px) {
+	.sign-up-wrapper {
+		height: max-content;
+		margin-top: 44px;
+	}
+}
+
+
+
+@media screen and (max-width: 1080px) {
+	.sign-up-wrapper {
+		font-size: calc(16px + 3 * ((100vw - 1080px) / (1080 - 300)));
+	}
+
+	.sign-up-h1 {
+		font-size: calc(32px + 10 * ((100vw - 1080px) / (1080 - 300)));
+		padding-top: calc(15px + 5 * ((100vw - 1080px) / (1080 - 300)));
+		padding-bottom: calc(15px + 5 * ((100vw - 1080px) / (1080 - 300)));
+	}
+}
+
 /**----------SIGN-UP END---------**/
 /**----------ABOUT START---------**/
 
