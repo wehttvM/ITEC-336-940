@@ -875,6 +875,7 @@ table.sign-up-table tr {
 	background-color: #26264b;
 	width: max-content;
 	max-width: calc(100% - 30px);
+	margin: 15px 0px;
 }
 
 .about-div-flex {
@@ -894,8 +895,41 @@ table.sign-up-table tr {
 .about-goals-ul {
 	padding: 15px 15px 15px 25px;
 	background-color: #26264b;
-	width: max-content;
-	max-width: calc(100% - 30px);
+	max-width: calc(100% - 40px);
+	margin: 15px 0px;
+}
+
+@media screen and (max-width: 480px) {
+	.about-exurbs {
+		width: calc(100% - 30px);
+	}
+
+	.about-wrapper {
+		height: max-content;
+		margin-top: 44px;
+		min-height: calc(100vh - 44px);
+	}
+}
+
+@media screen and (max-width: 1080px) {
+	.about-goals-ul,
+	.about-boxing {
+		font-size: calc(16px + 3 * ((100vw - 1080px) / (1080 - 300)));
+	}
+
+	div.about-mission-wrapper h1,
+	div.about-exurbs h1 {
+		font-size: calc(32px + 10 * ((100vw - 1080px) / (1080 - 300)));
+	}
+
+	.about-boxing,
+	.about-goals-ul {
+		padding-top: calc(15px + 10 * ((100vw - 1080px) / (1080 - 300)));
+		padding-bottom: calc(15px + 10 * ((100vw - 1080px) / (1080 - 300)));
+		margin-top: calc(15px + 10 * ((100vw - 1080px) / (1080 - 300)));
+		margin-bottom: calc(15px + 10 * ((100vw - 1080px) / (1080 - 300)));
+	}
+
 }
 
 /**----------ABOUT END---------**/
