@@ -727,7 +727,6 @@ td:last-child {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
 }
 
 .sign-up-form {
@@ -829,10 +828,9 @@ td label {
 	cursor: text;
 }
 
-table.sign-up-table tr{
-	border-top: 1px dashed #000 ;
+table.sign-up-table tr {
+	border-top: 1px dashed #0c0c17;
 }
-
 
 @media screen and (max-height: 720px) and (max-width: 480px) {
 	.sign-up-wrapper {
@@ -840,8 +838,6 @@ table.sign-up-table tr{
 		margin-top: 44px;
 	}
 }
-
-
 
 @media screen and (max-width: 1080px) {
 	.sign-up-wrapper {
