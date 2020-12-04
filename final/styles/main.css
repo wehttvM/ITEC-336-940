@@ -772,8 +772,8 @@ td:last-child {
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 	display: block;
 	box-sizing: content-box;
-	margin-top: 5px;
-	margin-left: 1px;
+	margin-top: 6px;
+	margin-left: 2px;
 	float: left;
 	cursor: pointer;
 }
@@ -784,8 +784,9 @@ td:last-child {
 	box-sizing: content-box;
 	margin: 0px;
 	margin-top: 3px;
-	padding-left: 17px;
+	padding: 1px 0px 1px 17px;
 	cursor: pointer;
+	border-right: 1px solid #26264b;
 }
 
 .sign-up-radio-div {
