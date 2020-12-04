@@ -721,7 +721,7 @@ td:last-child {
 .sign-up-wrapper {
 	overflow: hidden;
 	width: 100%;
-	height: calc(100vh - 86px);
+	height: calc(100vh - (86px + 15px));
 	margin-top: 86px;
 	margin-bottom: 15px;
 	display: flex;
@@ -849,6 +849,14 @@ table.sign-up-table tr {
 		font-size: calc(32px + 10 * ((100vw - 1080px) / (1080 - 300)));
 		padding-top: calc(15px + 5 * ((100vw - 1080px) / (1080 - 300)));
 		padding-bottom: calc(15px + 5 * ((100vw - 1080px) / (1080 - 300)));
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.sign-up-wrapper {
+		height: max-content;
+		margin-top: 44px;
+		min-height: calc(100vh - (44px + 15px + 200px));
 	}
 }
 
