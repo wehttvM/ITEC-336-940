@@ -325,7 +325,8 @@ td:last-child {
 	background-image: none;
 }
 
-.item-wrapper:hover > a.nav-item:hover {
+.item-wrapper:hover > a.nav-item:hover,
+.item-wrapper:hover > a.nav-item:active {
 	background-color: #191931;
 	font-size: 30px;
 }
@@ -347,7 +348,8 @@ td:last-child {
 		padding-left: calc(15px + 5 * ((100vw - 1080px) / (1080 - 300)));
 	}
 
-	.item-wrapper:hover > a.nav-item:hover {
+	.item-wrapper:hover > a.nav-item:hover,
+	.item-wrapper:hover > a.nav-item:active {
 		font-size: calc(30px + 8 * ((100vw - 1080px) / (1080 - 300)));
 	}
 
