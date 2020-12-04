@@ -937,7 +937,6 @@ table.sign-up-table tr {
 		margin-top: calc(15px + 10 * ((100vw - 1080px) / (1080 - 300)));
 		margin-bottom: calc(15px + 10 * ((100vw - 1080px) / (1080 - 300)));
 	}
-
 }
 
 /**----------ABOUT END---------**/
