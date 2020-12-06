@@ -398,7 +398,6 @@ td:last-child {
 	background-image: url("images/cross-crop-small.png");
 	background-repeat: repeat;
 	width: 100%;
-	height: 100vh;
 	background-attachment: fixed;
 }
 
