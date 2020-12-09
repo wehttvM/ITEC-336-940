@@ -658,7 +658,7 @@ td:last-child {
 	overflow: hidden;
 	width: 100%;
 	height: calc(100vh - 86px);
-	background-image: url("images/subspace-grphic.png");
+	background-image: url("images/subspace-graphic.png");
 	background-size: 100% 100%;
 	margin-top: 86px;
 }
